@@ -1,4 +1,4 @@
-# Kgastor: a Privacy By Design Knowledge Graph anonymized Store
+# Kgastor: m-invariance evaluation code
 
 ## Overview
 
