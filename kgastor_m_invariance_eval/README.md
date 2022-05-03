@@ -30,9 +30,20 @@ categories depending on the part of the program to which they apply:
 > - -hierarchies [hierarchy1] [hierarchy2] …  :  Provide paths to csv files containing the generalization hierarchies for the QIDs.
 > - -zipSuffix [N]  :  Sets the generalization level for the zipcodes (the size of the prefix) used when creating counting queries during the evaluation
 
+
+
+**Datasets**
+The datasets used during our evaluation can be downloaded as archives via the following links. Note that for performance reasons, we provide their TDB representations thus they should be loaded using the *-tdb* option.
+
+> - -LUBM 100   :   https://zenodo.org/record/6515956#.YnGyBtpBw2w
+
+The complementary RDF files containing the QID and SA statements can be found in the *qids_sa* directory.
+
+Finally, the *qid_hierarchies* directory contains the csv files describing how the QIDs should be generalized. These files are required for the anonymization to be performed.
+
+
 **Example**
 
 java -jar M-invarianceRdf.jar -tdb dataset/ -f  religion.ttl  zip.ttl   age.ttl    -hierarchies age_hierarchy.csv    zip_hierarchy_3000.csv -csv_path arx.csv -m 4 -zip_range 3000 -ratio 100 -sensitive "<http://swat.cse.lehigh.edu/onto/univ-bench.owl#hasReligion>" -zipSuffix 3
 
-**Datasets**
-During our evaluation, we used our own extension of LUBM (see paper). Even the smallest of our dataset (LUBM100) is already too large to fit into our public github account. You can access both the original (lubm100.nt) and privacy-enriched LUBM 100 (lubmAno100.ttl) files at http://igm.univ-mlv.fr/~ocure/kgastor/
+
