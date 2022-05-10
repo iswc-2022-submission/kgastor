@@ -36,6 +36,8 @@ categories depending on the part of the program to which they apply:
 The datasets used during our evaluation can be downloaded as archives via the following links. Note that for performance reasons, we provide their TDB representations thus they should be loaded using the *-tdb* option.
 
 > - -LUBM 100   :   https://zenodo.org/record/6515956#.YnGyBtpBw2w
+> - -LUBM 1000   :  Due to its size (even when compressed, we had trouble uploading a single archive to Zenodo or Figshare. To work around this problem, we uploaded the files separately and compressed the largest ones. To retrieve the dataset, one must download all files (and unzip them when necessary) and put them in a single folder which shall be provided to the *-tdb* option. The link : https://figshare.com/s/58ea945d251400724fa4  
+
 
 The complementary RDF files containing the QID and SA statements can be found in the *qids_sa* directory.
 
